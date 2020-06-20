@@ -1,6 +1,5 @@
 # Django Portfolio
 
-Home page
 ![alt text](https://github.com/weslleylc/django-portfolio/blob/master/portfolio/static/portfolio/img/django_project.png)
 
 Usage
