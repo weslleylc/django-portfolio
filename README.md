@@ -46,7 +46,7 @@ Go to admin painel and create a Profile, them associete this profile with your u
 
 Open the web application:
   
-    http://127.0.0.1:8000/
+    http://127.0.0.1:8000/portfolio
 
 # To Do
     Blog application 
