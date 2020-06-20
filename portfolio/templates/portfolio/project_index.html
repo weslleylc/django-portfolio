@@ -13,16 +13,17 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="banner_content">
-                                <h2>{{ profile.name }}</h2>
-                                <div>
-                                    <i class="fa fa-github" style=";color:black"></i>  <a href={{ profile.github_url|safe }}>Github</a>
-                                    <i class="fa fa-linkedin" style=";color:black"></i>  <a href={{ profile.linkedin_url|safe }}>Linkedin</a>
+                            {% if wes %}
+                                <div class="banner_content">
+                                    <h2>{{ wes.profile.name }}</h2>
+                                    <div>
+                                        <i class="fa fa-github" style=";color:black"></i>  <a href={{ wes.profile.github_url|safe }}>Github</a>
+                                        <i class="fa fa-linkedin" style=";color:black"></i>  <a href={{ wes.profile.linkedin_url|safe }}>Linkedin</a>
+                                    </div>
+                                    <p>{{ wes.profile.description}}</p>
+                                    <a class="banner_btn" href="{{wes.profile.cv_link.url}}" download>Resume</a>
                                 </div>
-                                <p>{{ profile.description}}</p>
-                                <a class="banner_btn" href="{{profile.cv_link.url}}" download>Resume</a>
-
-                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
