@@ -1,13 +1,2 @@
-asgiref==3.2.7
 Django==3.0.7
-django-appconf==1.0.4
-django-imagekit==4.0.2
-Markdown==3.2.2
-pilkit==2.0
 Pillow==7.1.2
-pinax-images==4.0.0
-psycopg2==2.8.5
-Pygments==2.6.1
-pytz==2020.1
-six==1.15.0
-sqlparse==0.3.1
