@@ -37,6 +37,10 @@ To use admin panel you need to create super user using this command:
 To run the program in local server use the following command:
 
     python manage.py runserver
+    
+Go to admin painel and create a Profile, them associete this profile with your user:
+    
+    http://127.0.0.1:8000/admin/
 
 Open the web application:
   
