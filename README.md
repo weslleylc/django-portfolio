@@ -1,5 +1,8 @@
 # Django Portfolio
 
+Home page
+![alt text](https://github.com/weslleylc/django-portfolio/blob/master/portfolio/static/portfolio/img/django_project.png)
+
 Usage
 -----
 Portfolio Project Build with Django 3
@@ -46,9 +49,6 @@ Open the web application:
   
     http://127.0.0.1:8000/
 
-
-Home page
-![alt text](https://github.com/weslleylc/django-portfolio/blob/master/portfolio/static/portfolio/img/django_project.png)
-
-
+# To Do
+    Blog application 
 
