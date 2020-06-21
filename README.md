@@ -36,6 +36,12 @@ To use admin panel you need to create super user using this command:
 
     python manage.py createsuperuser
 
+For developement in your local machine you need create a file local_settings.py on project_portfolio with this especifics parameters:
+
+    DEBUG = True
+    ALLOWED_HOSTS = []
+
+
 To run the program in local server use the following command:
 
     python manage.py runserver
