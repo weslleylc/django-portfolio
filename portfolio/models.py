@@ -20,7 +20,6 @@ class Profile(models.Model):
     github_url = models.CharField(max_length=50, blank=True)
     cv_link = models.FileField(upload_to='portfolio/resume/')
     cv_link_external = models.CharField(max_length=100, blank=True)
-    about_me = models.CharField(max_length=500, blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
 
     def __str__(self):
