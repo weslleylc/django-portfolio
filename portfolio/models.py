@@ -10,15 +10,16 @@ PROJECT_PROFILE_SIZE = 450
 
 class Profile(models.Model):
     name = models.CharField(max_length=200)
-    contact_no = models.CharField(max_length=20)
-    address = models.CharField(max_length=200)
-    description = models.TextField()
+    contact_no = models.CharField(max_length=20, blank=True)
+    address = models.CharField(max_length=200, blank=True)
+    description = models.TextField(blank=True)
     image = models.ImageField(help_text='452x588px recommmended', upload_to='portfolio/profile_pics')
     title = models.CharField(max_length=100, blank=True)
-    linkedin_url = models.CharField(max_length=100)
-    github_url = models.CharField(max_length=50)
-    about_me = models.CharField(max_length=500)
+    linkedin_url = models.CharField(max_length=100, blank=True)
+    github_url = models.CharField(max_length=50, blank=True)
     cv_link = models.FileField(upload_to='portfolio/resume/')
+    cv_link_external = models.CharField(max_length=100, blank=True)
+    about_me = models.CharField(max_length=500, blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
 
     def __str__(self):
