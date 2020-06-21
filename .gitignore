@@ -11,7 +11,9 @@ db.sqlite3
 __pycache__/
 /static/
 /media/
-/portfolio/migrations/
+/portfolio/migrations/*
+# exception to the rule
+!/portfolio/migrations/.gitkeep
 
 
 
