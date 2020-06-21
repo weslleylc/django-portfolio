@@ -43,7 +43,9 @@
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="{% url 'project_index' %}">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'project_index' %}#projects_area_id">Projects</a></li>
-								<li class="nav-item"><a class="nav-link" href="{% url 'project_index' %}#testimonials_area_id">Reviews</a>
+                                {% if wes.profile.allowed_comments %}
+								    <li class="nav-item"><a class="nav-link" href="{% url 'project_index' %}#testimonials_area_id">Reviews</a>
+                                {% endif %}
 							</ul>
 						</div>
 					</div>

@@ -10,6 +10,7 @@ PROJECT_PROFILE_SIZE = 450
 
 class Profile(models.Model):
     name = models.CharField(max_length=200)
+    allowed_comments = models.BooleanField(default=False)
     contact_no = models.CharField(max_length=20, blank=True)
     address = models.CharField(max_length=200, blank=True)
     description = models.TextField(blank=True)
